@@ -13,6 +13,7 @@ h2{
     font-size: calc(2.6vw + 24px);
     text-transform: uppercase;
     font-weight: 500;
+    margin-bottom: calc(5.53vw +19.2px);
 }
 .logo{
     padding-top: 38px;
@@ -46,7 +47,7 @@ h1{
     gap: 20px 30px;
     flex-wrap: wrap;
 }
-.cta button{
+.cta button, button {
     padding: 20px 0;
     width: 328px;
     cursor: pointer;
@@ -62,4 +63,202 @@ h1{
 .white{
     background-color: white;
     color: #6E3ABA;
+}
+/* Section2 Start */
+
+    
+.section_2 h2{
+    margin-bottom: calc(5.53vw +19.2px);
+}
+
+.section2_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: space-between;
+}
+.section2_card{
+    width: calc(13.5vw + 277px);
+}
+.section2_wrapper.top{
+    margin-bottom: 52px;
+}
+.section2_card img{
+    width: calc(4.2vw + 184.2px);
+}
+.section2_card h3{
+    font-size: calc( 1vw + 14.2px );
+    font-weight: 600;
+    margin: 10px 0 calc(1.1vw + 5.8px);
+}
+.section2_card p{
+    font-size: calc( 1vw + 14.2px );
+    line-height: 140%;
+}
+/* Section2 End */
+
+/* Section4 Start */
+.legend_info{
+    display: flex;
+    gap: 20px 51px;
+   
+}
+.legend_img{
+    flex-basis: 399px;
+    flex-grow: 0;
+}
+.legend_text{
+    flex-grow: 1;
+}
+.legend_text h3{
+    font-size: calc(1.1vw + 34px);
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: calc(1.1vw + 5.9px);
+}
+.legends_subtitle{
+    font-size: calc(1vw + 14.2px);
+    margin-bottom: calc(5.5vw + 19.3px);
+    width: calc(26.3vw + 229.3px);  
+}
+.legend_success{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 90px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "smile cup"
+                         "bag   keyboard";
+}
+.legend_card.smile{
+    grid-area: smile;
+}
+.legend_card.cup{
+    grid-area: cup;
+}
+.legend_card.bag{
+    grid-area: bag;
+}
+.legend_card.keyboard{
+    grid-area: keyboard;
+}
+.legend_card p{
+    font-size: 21px;
+}
+/* Section4 End */
+
+
+
+
+/* Section9 Start */
+.section9_wrapper{
+    display: flex;
+}
+.section9_img{
+    width: 50%;
+}
+.section9_img img{
+    width: 100%;
+    height: 100%;
+}
+.section9_info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px 0;
+}
+.section9_info p{
+    font-size: calc(0.33vw + 16.7px);
+    line-height: 140%;
+}
+/* Section9 End */
+
+
+/* Программа курса */
+
+.border {
+    border: 2px solid black;
+    padding: calc(4.4vw + 23px) calc(4.86vw + 2px) 0px;
+    position: relative;
+}
+
+#corner {
+    width: calc(6vw + 2px);
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+.lessons {
+    margin-top: calc(1.76vw + 17px);
+    font-size: calc(0.55vw + 14px);
+    line-height: 140%;
+}
+
+.lesson {
+    padding: 24px 0px;
+    border-bottom: 1px solid #A1A1A1;
+}
+
+.lesson:first-child {
+    padding-top: 0;
+}
+
+#course_Program .purple {
+    /* display: block; */
+    margin: 34px auto;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1170px) {
+    .section2_wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .legend_info{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:968px){
+    .section9_wrapper{
+        flex-direction: column;
+    }
+    .section9_img,.section9_info{
+        width: 100%;
+    }
+    .legend_success{
+        grid-template-areas: "smile keyboard"
+                             "cup   bag";
+    }
+} 
+
+@media (max-width:500px) {
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    }
+
+    .lesson:last-child {
+        border: none;
+    }
 }
