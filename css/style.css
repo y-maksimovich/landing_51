@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "TT Hoves";
+    font-family: "TT Hoves", 'Arial', sans-serif;
 }
 section{
     padding: 0 calc(10.6vw - 16px);
@@ -34,7 +34,7 @@ h2{
 }
 h1{
     font-size: 80px;
-    font-family: "Chava";
+    font-family: "Chava", 'Arial', sans-serif;
     margin-bottom: 40px;
 }
 .section1_text{
